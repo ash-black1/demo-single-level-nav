@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    max-width: 58rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -21,6 +21,27 @@ ul.menu a {
     /* anchor tag is an inline element - inline elements will not accept top and bottom padding and margins */
     /* good practice to make anchor tag block level elements */
     display: block;
+}
+
+ul.menu a:hover,
+ul.menu a:active {
+    color: #ff14eb;
+}
+
+svg path,
+svg rect,
+svg polygon {
+    fill: aquamarine;
+}
+
+ul.menu a:hover path,
+ul.menu a:hover rect,
+ul.menu a:hover polygon{
+    fill: #ff14eb;
+}
+
+svg {
+    width: 1.25rem;
 }
 
 /* change from a stacking navigation to a horizontal nav on larger viewports */
